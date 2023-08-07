@@ -21,12 +21,12 @@ body {
 
 input {
     display: block;
-    width: 100%;
+    width: 30%;
     margin: 0 auto;
     padding: 15px;
     font-size: 18px;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -58,8 +58,39 @@ input {
     }
 }
 
+h3 {
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+
 .pokemon-image {
-    max-width: 200px;
+    width: 250px;
+    height: 250px;
     display: block;
     margin: 10px auto;
+}
+
+.type {
+    font-size: 20px;
+    font-weight: 450;
+    margin-bottom: 30px;
+}
+
+.stats {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.error-msg {
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 900;
 }

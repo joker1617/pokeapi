@@ -38,7 +38,8 @@ async function search(searchInput) {
 
     createCards(data);
   } catch (error) {
-    errorMsg.textContent = `${error}`;
+    errorMsg.textContent = `${error}
+    Veuillez rentrer un numéro entre 1 et 1010`;
     loader.style.display = "none";
   }
 }
@@ -54,8 +55,10 @@ function createCards(data) {
     data.name
   }" class="pokemon-image">
 
-    <p>Types: ${data.types.map((type) => type.type.name).join(",")}</p> 
-    <p>Stats de base</p>
+    <p class= "type">Types : ${data.types
+      .map((type) => type.type.name)
+      .join(",")}</p> 
+    <p class= "stats">Stats de base:</p>
     <ul>
     ${data.stats
       .map((stat) => `<li>${stat.stat.name}: ${stat.base_stat}</li>`)
